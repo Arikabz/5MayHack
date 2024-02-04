@@ -1,47 +1,15 @@
-# Kit de Integración para Vara Network
+# Schola
 
-Bienvenido al Kit de Integración para Vara Network, es una herramienta poderosa para facilitar la integración con Vara Network en tus proyectos. Este kit proporciona una base sólida para interactuar con Vara Network y aprovechar sus capacidades en tu aplicación.
+Somos una plataforma de herramientas para aprendizaje que utiliza incentivos internos y externos. Confiamos en que los incentivos impulsados ​​y garantizados por la tecnología web3 junto con IA llevarán el aprendizaje a otro nivel.
 
-## Características Principales
+Conjuntando la tecnología de Gear, incentivos económicos y un chatbot para resolver dudas, podemos brindar una experiencia personalizada que se adapte a las necesidades de cada estudiante.
 
-- **Documentación Detallada:** Una guía completa para la integración rápida y fácil en tu aplicación.
-- **Ejemplos de Uso:** Ejemplos prácticos para comprender mejor cómo usar el kit en situaciones reales.
+## Incentivos
+- Externos: Una institución o grupo interesado porque personas aprendan habilidades técnicas puede brindar becas para que personas de bajos recursos no tengan que elegir entre mejorar su formación y luchar por mantener su economía cada hora del día. El labor social que se puede lograr con esta visión del proyecto tiene el potencial de llevar la web3 a muchas más personas y ayudarlas en su superación personal.
+- Internos: Un grupo de participantes compiten por demostrar quién es el mejor aprendiendo cierto tema. El incentivo en este caso viene de los mismos participantes, quienes pagan una cuota de entrada que se destina a un *pozo* que irá a aquellas personas que demuestren mejor su aprendizaje. Esta es la vertiente divertida del proyecto.
 
-## Requisitos Previos
-
-Asegúrate de tener instaladas las siguientes dependencias antes de comenzar:
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (administrador de paquetes de Node.js)
-
-## Instalación
-
-1. Clona este repositorio en tu máquina local:
-
-    ```bash
-    git clone https://github.com/A-mont/Vara-Integration-Kit-ETH-2024-.git
-    ```
-
-2. Navega al directorio del proyecto:
-
-    ```bash
-    cd Vara-Integration-Kit-ETH-2024-/Frontend
-    ```
-
-3. Instala las dependencias:
-
-    ```bash
-    yarn install
-    ```
-    o
-4. Inicia el proyecto en el localhost:
-
-    ```bash
-    yarn start
-   o ```
-
-## Uso
-
-Consulta la [documentación](./docs) para obtener información detallada sobre cómo utilizar este kit en tu proyecto. Aquí encontrarás ejemplos de código y explicaciones paso a paso.
+## Casos de uso
+Un caso de uso posible es una academia para aprender inglés desde cualquier idioma materno, gracias a la ayuda de nuestro chatbot que puede llegar a resolver dudas y complementar la enseñanza tradicional virtual.
 
 
 
