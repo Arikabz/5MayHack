@@ -2,8 +2,12 @@ const ADDRESS = {
   NODE: process.env.REACT_APP_NODE_ADDRESS as string,
 };
 
-const LOCAL_STORAGE = {
-  ACCOUNT: 'account',
+const OPENAI_API_KEY = {
+  KEY: process.env.REACT_APP_OPENAI_API_KEY as string,
 };
 
-export { ADDRESS, LOCAL_STORAGE };
+const LOCAL_STORAGE = {
+  ACCOUNT: "account",
+};
+
+export { ADDRESS, OPENAI_API_KEY, LOCAL_STORAGE };
