@@ -2,35 +2,42 @@ import { useState } from "react";
 import { chat } from "../../chat/chat";
 
 function Chat() {
-  const [input, setInput] = useState(""); // Estado para almacenar el input del usuario
-  const [res, setRes] = useState(""); // Estado para almacenar la respuesta del chat
+    const [input, setInput] = useState(""); // Estado para almacenar el input del usuario
+    const [thinking, setThink] = useState(false);
+    const [res, setRes] = useState(""); // Estado para almacenar la respuesta del chat
 
-  const handleChat = async () => {
-    const completion = await chat(input); // Pasa el input del usuario a la función chat
-    if (completion) {
-      setRes(completion);
-    } else {
-      setRes("ChatGPT fue a tirar la basura, vuelve en 5 minutos.");
-    }
-  };
+    const handleChat = async () => {
+        setThink(true)
+        const completion = await chat(input); // Pasa el input del usuario a la función chat
+        if (completion) {
+            setRes(completion);
+            setThink(false)
+        } else {
+            setRes("ChatGPT fue a tirar la basura, vuelve en 5 minutos.");
+        }
+    };
 
-  return (
-    <div>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Escribe tu mensaje aquí"
-        className="form-control mb-2"
-      />{" "}
-      {/* Cuadro de input para el usuario */}
-      <button type="button" onClick={handleChat} className="btn bg-secondary">
-        Iniciar Chat
-      </button>{" "}
-      {/* Botón para iniciar el chat */}
-      {res && <div className="respuesta">{res}</div>}
-    </div>
-  );
+    return (
+        <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content text-center">
+                <div className="max-w-bg">
+                    <div className="chat chat-start my-10">
+                        <div className="chat-bubble">{res}</div>
+                    </div>
+                    {thinking && <div className='badge badge-accent badge-outline'>Thinking...</div>}
+                    <div className='content-center'>
+                        <div className='grid-cols-2 gap-10'>
+                            <input type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="Type here" className="input input-bordered input-primary w-full max-w-xs" />
+                            <button type="button" onClick={handleChat} className="btn bg-secondary">Explicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+
+
 }
+
 
 export { Chat };
