@@ -8,7 +8,7 @@ include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
 
 
 // 1. Create the main state as a static variable.
-static mut STATE:Option<CustomStruct> = None;
+static mut STATE:Option<String> = None;
 
 // 1.1 Create the init state.
 static mut INIT:Option<InitStruct> = None;
@@ -16,7 +16,7 @@ static mut INIT:Option<InitStruct> = None;
 
 
 // 2. Create the mutability function for your state.
-fn state_mut() -> &'static mut CustomStruct {
+fn state_mut() -> &'static mut String {
 
     let state = unsafe {  STATE.as_mut()};
 
@@ -36,9 +36,8 @@ fn init_state_mut() -> &'static mut InitStruct {
 // Create a public State
 #[derive(Clone, Default)]
 pub struct CustomStruct {
-    pub firstfield: String,
-    pub secondfield: u128,
-    pub thirdfield: HashMap<ActorId, u128>,
+    pub poleposition: String,
+    pub pointstobeat: u128
 }
 
 // Create a implementation on State
@@ -93,58 +92,36 @@ async fn main(){
 
         // We receive an action from the user and update the state. Example:
         match action {
-            Action::FirstAction => {
+            Action::Overtaking(input) => {
 
                 // Create a variable with mutable state.
                 let currentstate = state_mut();
 
                 // Update your state.
-                currentstate.thirdfield
-                .entry(msg::source())
-                .and_modify(|number| *number = number.saturating_add(1))
-                .or_insert(1);
+                currentstate.poleposition = input.to_string();
 
 
                  // Generate your event.
-                 let _ =msg::reply(Event::FirstEvent,0);
+                 let _ =msg::reply(Event::Overtake,0);
 
 
             }
-            Action::SecondAction(input) => {
-
-
-                 // Create a variable with mutable state.
-                let currentstate = state_mut();
-
-                // Update your state with a String input
-                currentstate.firstfield = input.to_string();
+            Action::Pay(input) => {
+                
+                transfer(ActorId, 0x51caa51ce1833d8f786136863645dbcff0c5c3b32fb404a4709e9a2c2c8afc29, input)
 
                  // Generate your event.
-                let _ =  msg::reply(Event::SecondEvent,0);
+                let _ =  msg::reply(Event::Pay,0);
                
 
             }
-            Action::ThirdAction(input) => {
+            Action::Match_pay(input) => {
                
-                // Create a variable with mutable state.
-                let currentstate = state_mut();
-
-                // Update your state with a String input
-                currentstate.secondfield = input;
+                transfer(ActorId, 0x51caa51ce1833d8f786136863645dbcff0c5c3b32fb404a4709e9a2c2c8afc29, 0x51caa51ce1833d8f786136863645dbcff0c5c3b32fb404a4709e9a2c2c8afc29.balance())
 
                 // Generate your event.
-                let _ = msg::reply(Event::ThirdEvent,0);
+                let _ = msg::reply(Event::Pay,0);
             }
-
-            // 
-            Action::Fourthaction(_input) => {
-               
-                let _currentstate = state_mut();
-
-
-                let _ =  msg::reply(Event::ThirdEvent,0);
-            }
-
            
         };
     }
@@ -171,19 +148,19 @@ impl From<CustomStruct> for IoCustomStruct {
     fn from(value: CustomStruct) -> Self {
         // Destructure the CustomStruct object into its individual fields
         let CustomStruct {
-            firstfield,
-            secondfield,
-            thirdfield,
+            name_field,
+            id_field,
+            points_field,
         } = value;
 
-        // Perform some transformation on thirdfield, cloning its elements
-        let thirdfield = thirdfield.iter().map(|(k, v)| (*k, v.clone())).collect();
+        // Perform some transformation on points_field, cloning its elements
+        let points_field = points_field.iter().map(|(k, v)| (*k, v.clone())).collect();
    
         // Create a new IoCustomStruct object using the destructured fields
         Self {
-            firstfield,
-            secondfield,
-            thirdfield,
+            name_field,
+            id_field,
+            points_field,
         }
     }
 }
