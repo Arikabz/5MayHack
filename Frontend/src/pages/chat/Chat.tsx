@@ -63,36 +63,38 @@ function Chat() {
         </div>
 
         {/* Columna de cuestionario */}
-        <h1>Concept quiz</h1>
-        <h2>
-          "1. What is the meaning of dApp? 2. What is the meaning of DAO? 3.
-          What is the meaning of NFT? 4. What is the meaning of DeFi? 5. What is
-          the meaning of Smart Contract?",
-        </h2>
-        <div className="text-center">
-          <div className="my-10">
-            {thinkingQuest ? (
-              <div className="badge badge-accent badge-outline">
-                Thinking...
+        <div>
+          <h1>Concept quiz</h1>
+          <h2>
+            "1. What is the meaning of dApp? 2. What is the meaning of DAO? 3.
+            What is the meaning of NFT? 4. What is the meaning of DeFi? 5. What
+            is the meaning of Smart Contract?",
+          </h2>
+          <div className="text-center">
+            <div className="my-10">
+              {thinkingQuest ? (
+                <div className="badge badge-accent badge-outline">
+                  Thinking...
+                </div>
+              ) : (
+                <div className="chat-bubble">{responseQuest}</div>
+              )}
+              <div className="mt-4">
+                <input
+                  type="text"
+                  onChange={(e) => setInputQuest(e.target.value)}
+                  value={inputQuest}
+                  placeholder="Type here your answer"
+                  className="input input-bordered input-primary w-full max-w-xs"
+                />
+                <button
+                  type="button"
+                  onClick={handleQuest}
+                  className="btn bg-secondary ml-2"
+                >
+                  Submit answers
+                </button>
               </div>
-            ) : (
-              <div className="chat-bubble">{responseQuest}</div>
-            )}
-            <div className="mt-4">
-              <input
-                type="text"
-                onChange={(e) => setInputQuest(e.target.value)}
-                value={inputQuest}
-                placeholder="Type here your answer"
-                className="input input-bordered input-primary w-full max-w-xs"
-              />
-              <button
-                type="button"
-                onClick={handleQuest}
-                className="btn bg-secondary ml-2"
-              >
-                Submit answers
-              </button>
             </div>
           </div>
         </div>
