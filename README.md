@@ -1,5 +1,9 @@
 # Schola
 
+
+[Online Demo](https://schola-nu.vercel.app/)
+----
+
 Somos una plataforma de herramientas para aprendizaje que utiliza incentivos internos y externos. Confiamos en que los incentivos impulsados ​​y garantizados por la tecnología web3 junto con IA llevarán el aprendizaje a otro nivel.
 
 Conjuntando la tecnología de Gear, incentivos económicos y un chatbot para resolver dudas, podemos brindar una experiencia personalizada que se adapte a las necesidades de cada estudiante.
@@ -28,3 +32,25 @@ A pesar de que se intentó implementar la visión completa para el proyecto, con
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para obtener más detalles.
+
+# Acerca del MVP:
+## Uso de tecnología para hacer un ecosistema atractivo para estudiantes
+
+Solución al problema de los incentivos para el aprendizaje del idioma inglés en Latinoamérica
+
+- **El uso de tecnología en cadena descentralizada:** abre la puerta a un sistema educativo más accesible y eficiente, ya que dependerá unicamente de la conexión a internet y será gratuito,
+- **Ofrecer variedad de recursos y enfoques**: Proporcionar una variedad de recursos, como libros, aplicaciones, videos y juegos, puede ayudar a los estudiantes a encontrar un enfoque de aprendizaje que les resulte más interesante y efectivo.
+- **Recompensas por completar tareas:** Los usuarios pueden recibir recompensas por completar tareas, como completar cuestionarios, ver videos, o participar en discusiones.
+- **Recompensas por participar :** Los usuarios pueden competir por recompensas en clases, como concursos en ejercicios sobre gramática
+- **Recompensas por recomendar la DApp:** Los usuarios pueden recibir recompensas por recomendar la DApp a sus amigos, sistema de referido con tokens
+
+## Desarrollo con IA
+
+Esta herramienta es indispensable en cualquier proyecto web 3 para que pueda competir, ya que todos ahora la implementan, en este caso el mejor uso de IA sería para agregar una parte del propio valor de la Dapp, la creación de contenido sencillo y específico (personalizado) para los estudiantes será una herramienta para que se pueda practicar de una manera más natural.
+
+## El uso de herramientas Web 3 para atender este problema en México
+
+1. **Utilizar la Inteligencia Artificial**: Implementar tecnologías de Inteligencia Artificial para personalizar la experiencia de aprendizaje de cada niño. Esto permitirá adaptar los contenidos y ejercicios a las necesidades individuales de cada participante, haciéndolo más atractivo y efectivo.
+2. **Fomentar la interacción y colaboración**: Crear espacios de interacción y colaboración dentro de la plataforma donde los niños puedan practicar el idioma objetivo con otros participantes. Esto puede incluir foros de discusión, salas de chat o actividades grupales.
+3. **Ofrecer actividades lúdicas y desafiantes**: Diseñar juegos y actividades interactivas que utilicen la Inteligencia Artificial para brindar retroalimentación inmediata y motivar a los niños a seguir aprendiendo. Estos juegos pueden incluir desafíos, competencias y logros que les permitan ganar crypto-activos digitales.
+4. **Proporcionar seguimiento y reconocimiento**: Realizar un seguimiento del progreso de cada niño y reconocer sus logros a través de certificados digitales o distintivos especiales. Esto les dará un sentido de logro y los motivará a seguir participando.
