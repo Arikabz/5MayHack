@@ -64,9 +64,9 @@ function Chat() {
         <div>
           <h1>Concept quiz</h1>
           <h2>
-            "1. What is the meaning of dApp? 2. What is the meaning of DAO? 3.
+            '1. What is the meaning of dApp? 2. What is the meaning of DAO? 3.
             What is the meaning of NFT? 4. What is the meaning of DeFi? 5. What
-            is the meaning of Smart Contract?",
+            is the meaning of Smart Contract?'
           </h2>
           <div className="text-center">
             <div className="my-10">
