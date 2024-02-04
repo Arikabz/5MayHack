@@ -19,11 +19,11 @@ Conjuntando la tecnología de Gear, incentivos económicos y un chatbot para res
 ![image](https://github.com/Arikabz/5MayHack/assets/81389205/5384b4bc-2902-464b-bf4d-3424569a10f6)
 
 
-
-## Casos de uso
+## Posible caso de uso
 Un caso de uso posible es una academia para aprender inglés desde cualquier idioma materno, gracias a la ayuda de nuestro chatbot que puede llegar a resolver dudas y complementar la enseñanza tradicional virtual.
 
-
+## Alcance
+A pesar de que se intentó implementar la visión completa para el proyecto, contratos como el Escrow tienen funcionalidad incompleta que se implementará en versiones posteriores, sin emabargo, el producto mínimo viable tiene las principales funciones que queremos del proyecto para mostrarlo a la comunidad Web3 y recordar que un proyecto puede buscar el impacto social, la diversión entre amigos y el aprendizaje al mismo tiempo. Las posibilidades son infinitas y seguimos desarrollando un ambiente más amigable para los desarrolladores y usuarios del futuro.
 
 ## Licencia
 
