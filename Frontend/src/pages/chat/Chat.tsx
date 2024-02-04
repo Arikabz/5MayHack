@@ -32,31 +32,33 @@ function Chat() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="grid grid-cols-2 gap-4">
-        <h1>Concept review</h1>
-        <div className="text-center">
-          <div className="my-10">
-            {thinkingChat ? (
+        <div className="hero-content text-center">
+          <div className="max-w-bg">
+            <div className="chat chat-start my-10">
+              <div className="chat-bubble">{responseChat}</div>
+            </div>
+            {thinkingChat && (
               <div className="badge badge-accent badge-outline">
                 Thinking...
               </div>
-            ) : (
-              <div className="chat-bubble">{responseChat}</div>
             )}
-            <div className="mt-4">
-              <input
-                type="text"
-                onChange={(e) => setInputChat(e.target.value)}
-                value={inputChat}
-                placeholder="Type here terms to translate"
-                className="input input-bordered input-primary w-full max-w-xs"
-              />
-              <button
-                type="button"
-                onClick={handleChat}
-                className="btn bg-secondary ml-2"
-              >
-                Explain
-              </button>
+            <div className="content-center">
+              <div className="grid-cols-2 gap-10">
+                <input
+                  type="text"
+                  onChange={(e) => setInputChat(e.target.value)}
+                  value={inputChat}
+                  placeholder="Type here"
+                  className="input input-bordered input-primary w-full max-w-xs"
+                />
+                <button
+                  type="button"
+                  onClick={handleChat}
+                  className="btn bg-secondary"
+                >
+                  Explicar
+                </button>
+              </div>
             </div>
           </div>
         </div>
