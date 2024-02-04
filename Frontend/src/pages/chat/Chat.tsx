@@ -32,7 +32,6 @@ function Chat() {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="grid grid-cols-2 gap-4">
-        {/* Columna de chat */}
         <h1>Concept review</h1>
         <div className="text-center">
           <div className="my-10">
@@ -62,7 +61,6 @@ function Chat() {
           </div>
         </div>
 
-        {/* Columna de cuestionario */}
         <div>
           <h1>Concept quiz</h1>
           <h2>
