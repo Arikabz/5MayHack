@@ -13,6 +13,13 @@ Conjuntando la tecnología de Gear, incentivos económicos y un chatbot para res
 
 ![image](https://github.com/Arikabz/5MayHack/assets/81389205/e2853665-44a1-406a-8edb-9371600f009f)
 
+## Contratos Inteligentes
+![image](https://github.com/Arikabz/5MayHack/assets/81389205/fb9e2aa8-e4bb-403b-bd82-8165d292475f)
+
+![image](https://github.com/Arikabz/5MayHack/assets/81389205/5384b4bc-2902-464b-bf4d-3424569a10f6)
+
+
+
 ## Casos de uso
 Un caso de uso posible es una academia para aprender inglés desde cualquier idioma materno, gracias a la ayuda de nuestro chatbot que puede llegar a resolver dudas y complementar la enseñanza tradicional virtual.
 
