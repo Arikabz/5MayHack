@@ -33,6 +33,7 @@ function Chat() {
     <div className="hero min-h-screen bg-base-200">
       <div className="grid grid-cols-2 gap-4">
         {/* Columna de chat */}
+        <h1>Concept review</h1>
         <div className="text-center">
           <div className="my-10">
             {thinkingChat ? (
@@ -47,7 +48,7 @@ function Chat() {
                 type="text"
                 onChange={(e) => setInputChat(e.target.value)}
                 value={inputChat}
-                placeholder="Type here for chat"
+                placeholder="Type here terms to translate"
                 className="input input-bordered input-primary w-full max-w-xs"
               />
               <button
@@ -55,13 +56,19 @@ function Chat() {
                 onClick={handleChat}
                 className="btn bg-secondary ml-2"
               >
-                Chat
+                Explain
               </button>
             </div>
           </div>
         </div>
 
         {/* Columna de cuestionario */}
+        <h1>Concept quiz</h1>
+        <h2>
+          "1. What is the meaning of dApp? 2. What is the meaning of DAO? 3.
+          What is the meaning of NFT? 4. What is the meaning of DeFi? 5. What is
+          the meaning of Smart Contract?",
+        </h2>
         <div className="text-center">
           <div className="my-10">
             {thinkingQuest ? (
@@ -76,7 +83,7 @@ function Chat() {
                 type="text"
                 onChange={(e) => setInputQuest(e.target.value)}
                 value={inputQuest}
-                placeholder="Type here for quest"
+                placeholder="Type here your answer"
                 className="input input-bordered input-primary w-full max-w-xs"
               />
               <button
@@ -84,7 +91,7 @@ function Chat() {
                 onClick={handleQuest}
                 className="btn bg-secondary ml-2"
               >
-                Quest
+                Submit answers
               </button>
             </div>
           </div>
