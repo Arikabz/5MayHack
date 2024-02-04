@@ -4,7 +4,7 @@ import { useAccount, useApi, useAlert } from "@gear-js/react-hooks";
 import { ProgramMetadata, encodeAddress } from "@gear-js/api";
 import { useEffect, useState } from "react";
 
-function LocalBalanceToken() {
+function LocalBalance () {
   const { api } = useApi();
   const { account } = useAccount();
 
@@ -60,5 +60,5 @@ const meta =
   );
 }
 
-export { LocalBalanceToken };
+export { LocalBalance };
   
